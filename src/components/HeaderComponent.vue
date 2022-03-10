@@ -25,7 +25,7 @@ export default {
   name: "HeaderComponent",
   data: () => ({
     links: [
-      {name: 'Home', link: '/visits'},
+      {name: 'Home', link: '/visites'},
       {name: 'About Us', link: '/'},
       {name: 'Team', link: '/'},
       {name: 'Services', link: '/'},
