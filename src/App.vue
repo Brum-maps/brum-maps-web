@@ -1,11 +1,10 @@
 <template>
   <HeaderComponent></HeaderComponent>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <router-view/>
   <footer-section></footer-section>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import FooterSection from "@/components/FooterSection";
 import HeaderComponent from "@/components/HeaderComponent";
 
@@ -13,8 +12,7 @@ export default {
   name: 'App',
   components: {
     FooterSection,
-    HeaderComponent,
-    HelloWorld
+    HeaderComponent
   }
 }
 </script>
