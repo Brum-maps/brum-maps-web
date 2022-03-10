@@ -1,11 +1,21 @@
 <template>
   <v-footer style="background-color: #AE9387" padless>
-    <v-row justify="center" no-gutters="true">
-      <router-link v-for="link in links" :to="link.link" :key="link" style="text-decoration: none; color: inherit;">
-        <v-btn elevation="0" color="#AE9387" plain text class="py-2 px-16" text-color="white">
-          {{ link.name }}
-        </v-btn>
-      </router-link>
+    <v-row no-gutters="true" align="center" justify="center">
+      <v-col>
+        <v-img
+            max-height="100"
+            max-width="100"
+            src="../assets/Brum-maps-logo-removebg-cropped.png"
+            class="ml-10"
+        ></v-img>
+      </v-col>
+      <v-col v-for="link in links" :key="link">
+        <router-link :to="link.link"  style="text-decoration: none; color: inherit;">
+          <v-btn elevation="0" color="#AE9387" plain text class="px-16" text-color="white">
+            {{ link.name }}
+          </v-btn>
+        </router-link>
+      </v-col>
     </v-row>
   </v-footer>
 </template>
@@ -15,13 +25,13 @@ export default {
   name: "HeaderComponent",
   data: () => ({
     links: [
-      {name: 'Home', link: '/visites'},
+      {name: 'Home', link: '/visits'},
       {name: 'About Us', link: '/'},
       {name: 'Team', link: '/'},
       {name: 'Services', link: '/'},
       {name: 'Blog', link: '/'},
       {name: 'Contact Us', link: '/'},
-    ],
+    ]
   }),
 }
 </script>
