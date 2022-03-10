@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
-import HomeComponent from "@/components/HomeComponent";
-import SignUpComponent from "@/components/SignUpComponent";
+import HomeComponent from "@/views/HomeComponent";
+import ConnexionComponent from "@/views/ConnexionComponent";
 
 const routes = [
     {
@@ -9,14 +9,10 @@ const routes = [
         component: HomeComponent,
     },
     {
-        path: "/signup",
-        name: "SignUpComponent",
-        component: SignUpComponent,
-    },
-    {
-        path: "/:catchAll(.*)",
-        component: HomeComponent,
-    },
+        path: "/connexion",
+        name: "ConnexionComponent",
+        component: ConnexionComponent,
+    }
 ];
 
 const router = createRouter({
