@@ -46,6 +46,17 @@ export default {
         {title: "Visite 2", description: "Une visite du park de la courneuve", placesNumber:8, active: false},
       ]
     }
+  },
+  methods: {
+    getList() {
+      this.axios.get("http://10.33.3.195:3000/bru-maps/step/getAll").then((response) => {
+        console.log(response.data)
+      })
+      // or
+      this.$http.get(api).then((response) => {
+        console.log(response.data)
+      })
+    }
   }
 }
 </script>
