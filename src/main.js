@@ -7,6 +7,7 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 
 
+
 loadFonts()
 
 createApp(App)

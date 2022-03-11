@@ -1,9 +1,11 @@
 import { createWebHistory, createRouter } from "vue-router";
-import ConnexionComponent from "@/views/ConnexionComponent";
 import CourseList from "@/views/CourseList";
+import LoginPage from "@/views/LoginPage";
+import ServicePage from "@/views/ServicePage";
 import HomeComponent from "@/components/HomeComponent";
 import CourseCreationComponent from "@/views/CourseCreationComponent";
 import StepsList from "@/views/StepsList";
+import StepList from "@/views/StepList";
 
 const routes = [
     {
@@ -12,14 +14,24 @@ const routes = [
         component: HomeComponent,
     },
     {
-        path: "/connexion",
-        name: "ConnexionComponent",
-        component: ConnexionComponent,
+        path: "/login",
+        name: "LoginPage",
+        component: LoginPage,
     },
     {
-        path: "/visites",
+        path: "/visits",
         name: "CourseList",
         component: CourseList
+    },
+    {
+        path: "/steps",
+        name:"StepList",
+        component: StepList
+    },
+    {
+        path: "/service",
+        name:"ServicePage",
+        component: ServicePage
     },
     {
         path: "/create-course",
@@ -32,6 +44,7 @@ const routes = [
         component: StepsList
     }
 ];
+
 
 const router = createRouter({
     history: createWebHistory(),

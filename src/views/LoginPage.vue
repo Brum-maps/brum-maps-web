@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-layout class="justify-center">
+    <v-layout class="justify-center pt-15">
         <!-- login view -->
         <v-card style="width: 500px">
           <v-toolbar>
@@ -41,7 +41,7 @@
 
 <script>
 export default {
-  name: "ConnexionComponent",
+  name: "LoginPage",
   data() {
     return {
       username: "",
@@ -53,10 +53,16 @@ export default {
   methods: {
     connect: function () {
       //TODO: Call API to login
+      if(localStorage.getItem("userId") != null){
+        return null;
+      }else{
+        localStorage.setItem("userId", "1");
+      }
     }
+  },
+  beforeMount() {
+    this.isConnected = !!localStorage.getItem("userId");
   }
-
-
 }
 </script>
 

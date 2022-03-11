@@ -25,12 +25,11 @@ export default {
   name: "HeaderComponent",
   data: () => ({
     links: [
-      {name: 'Home', link: '/visites'},
-      {name: 'About Us', link: '/'},
-      {name: 'Team', link: '/'},
-      {name: 'Services', link: '/'},
-      {name: 'Blog', link: '/'},
-      {name: 'Contact Us', link: '/'},
+      {name: 'DashBoard', link: '/'},
+      {name: 'Visites', link: '/visits'},
+      {name: 'Services', link: '/service'},
+      {name: 'Step', link: '/steps'},
+      {name: 'Login', link: '/login'},
     ]
   }),
 }
