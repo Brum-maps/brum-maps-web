@@ -80,6 +80,7 @@ export default {
       })
     },
     courseOn(course) {
+      course.isActive = true;
       console.log(course) // TODO: Action on activation
       let data = {isActive: true}
       this.axios.put("http://10.33.3.195:3000/bru-maps/itinerary/isActiveItinerary/"+course.id,data)
