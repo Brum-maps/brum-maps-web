@@ -26,10 +26,10 @@ export default {
   data: () => ({
     links: [
       {name: 'DashBoard', link: '/'},
-      {name: 'Visites', link: '/visites'},
-      {name: 'Services', link: '/'},
-      {name: 'Guide', link: '/steps'},
-      {name: 'Login', link: '/connexion'},
+      {name: 'Visites', link: '/visits'},
+      {name: 'Services', link: '/service'},
+      {name: 'Step', link: '/steps'},
+      {name: 'Login', link: '/login'},
     ]
   }),
 }
