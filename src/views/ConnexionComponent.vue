@@ -53,6 +53,8 @@ export default {
   methods: {
     connect: function () {
       //TODO: Call API to login
+      let user = "123456";
+      localStorage.setItem("userId", user);
     }
   }
 
