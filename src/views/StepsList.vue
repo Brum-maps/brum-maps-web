@@ -53,7 +53,7 @@ export default {
         console.log(response.data)
       })
       // or
-      this.$http.get(api).then((response) => {
+      this.$http.get("http://10.33.3.195:3000/bru-maps/step/getAll").then((response) => {
         console.log(response.data)
       })
     }
