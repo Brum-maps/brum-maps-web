@@ -27,7 +27,6 @@ export default {
     links: [
       {name: 'DashBoard', link: '/'},
       {name: 'Visites', link: '/visits'},
-      {name: 'Services', link: '/service'},
       {name: 'Step', link: '/steps'},
       {name: 'Login', link: '/login'},
     ]
