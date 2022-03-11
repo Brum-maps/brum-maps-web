@@ -1,5 +1,5 @@
 <template>
-  <v-footer bottom style="width: 100%;" padless>
+  <v-footer app bottom fixed style="width: 100%;" padless>
     <v-row justify="center" class="my-3">
       <router-link v-for="link in links" :to="link.link" :key="link" style="text-decoration: none; color: inherit;">
         <v-btn elevation="0" color="white" plain text class="px-8 text-footer" text-color="black">

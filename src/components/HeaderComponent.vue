@@ -10,7 +10,7 @@
         ></v-img>
       </v-col>
       <v-col v-for="link in links" :key="link">
-        <router-link :to="link.link"  style="text-decoration: none; color: inherit;">
+        <router-link :to="link.link" style="text-decoration: none; color: inherit;">
           <v-btn elevation="0" color="#AE9387" plain text class="px-16" text-color="white">
             {{ link.name }}
           </v-btn>
